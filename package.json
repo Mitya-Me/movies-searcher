@@ -2,7 +2,7 @@
   "name": "films",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amoqq.github.io/react_movieLand",
+  "homepage": "https://mitya-me.github.io/movies-searcher/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
