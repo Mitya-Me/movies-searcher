@@ -4,21 +4,3 @@
     justify-content: center;
 }
 
-.no-result-message {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 5.5rem;
-
-    &__one {
-        color: rgb(65, 88, 208);
-    }
-
-    &__two {
-        color: rgb(200, 80, 192);
-    }
-
-    &__three {
-        color: #ffcc70;
-    }
-}

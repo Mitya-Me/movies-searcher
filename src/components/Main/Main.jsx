@@ -6,7 +6,6 @@ import Preloader from "./Preloader/Preloader";
 
 import "./Main.scss";
 
-
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 const Main = () => {
@@ -17,8 +16,7 @@ const Main = () => {
         setLoading(true);
 
         fetch(
-            `https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${
-                category !== "all" ? `&type=${category}` : ""
+            `https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${category !== "all" ? `&type=${category}` : ""
             }`
         )
             .then((resp) => resp.json())

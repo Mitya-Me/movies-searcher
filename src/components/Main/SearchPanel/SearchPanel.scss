@@ -1,9 +1,15 @@
-
 .search-panel {
+
     &__input {
-        width: 50%;
+        width: 65%;
         margin: 0 auto;
         position: relative;
+
+        
+    @media (max-width: 800px ) {
+        width: 100%;
+    }
+
 
         input {
             width: 100%;

@@ -1,12 +1,24 @@
 .filmcard {
-    flex: 0 1 20%;
+    flex: 0 1 20% ;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     transition: 1s ease;
     cursor: pointer;
-    margin: 1rem;
+    margin: 10px;
+
+    @media (max-width: 1024px) {
+        flex: 0 1 25%;
+    }
+
+    @media (max-width: 800px ) {
+        flex: 0 1 45%;
+    }
+
+    @media (max-width: 500px ) {
+        flex: 0 1 65%;
+    }
 
     &:hover .filmcard__title {
         display: block;
@@ -47,7 +59,7 @@
         top: 40%;
         z-index: 1;
         transform: translate(-50%, -50%);
-        animation: zoomIn 0.6s ease;
+        animation: zoomIn .9s ease;
         text-align: center;
         font-weight: bold;
 

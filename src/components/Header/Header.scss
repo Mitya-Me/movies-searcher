@@ -1,11 +1,14 @@
 .header {
     padding: 2rem 4rem;
     background-color: white;
+    height: 15vh;
+    text-align: center;
 
-    &__content {
-        text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 1rem 2rem;
+        height: 10vh;
     }
-
 
     &__title {
         font-weight: bold;
@@ -19,6 +22,10 @@
         background-repeat: no-repeat;
         background-size: 80%;
         animation: shine 3s linear infinite;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
     }
 }
 

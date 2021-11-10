@@ -1,4 +1,5 @@
 import FilmCard from "../FilmCard/FilmCard";
+import NoResultSection from "../NoResultSection/NoResultSection";
 
 import "./FilmsList.scss";
 
@@ -19,16 +20,7 @@ const FilmsList = (props) => {
                     />
                 ))
             ) : (
-                <div className='no-result-message'>
-                    <span className='no-result-message__one'>Sorry</span>
-                    <span className='no-result-message__two'>
-                        but no results
-                    </span>
-                    <span className='no-result-message__three'>
-                        were found for your search.
-                    </span>
-                    
-                </div>
+                <NoResultSection />
             )}
         </div>
     );
